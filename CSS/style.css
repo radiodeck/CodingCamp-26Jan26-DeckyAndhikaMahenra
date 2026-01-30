@@ -1,14 +1,17 @@
 .logo  {
     height: 80px;
     width: 80px;
-    background-color: crimson;
-    border-radius: 50%;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKbIRBWs5wvT19l_IojMiWlNGXzyPdT53FSg&s);
-    background-size: contain;
+    background-color: rgba(172, 170, 171, 0);
+    background-image: url(https://img1.picmix.com/output/stamp/normal/5/9/8/6/2726895_1871a.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main-header {
     display: flex;
+    background-color: #1d3aad;
     justify-content: space-between;
     align-items: center;
 }
+

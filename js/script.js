@@ -11,9 +11,20 @@ function welcomeMessage() {
     }
     
     // Display a welcome alert with the user's name
-    document.getElementById ("welcome-speech").innerText = "Welcome " + userResponse + " to my portfolio website!";
+    document.getElementById ("welcome-speech").innerText = "Welcome " + userResponse + ", to my portofolio website!";
 }   
 
 // Function to handle form submission
 function submitForm(event) {}
+
+// Function for responses
+function getResponse() {
+    // Get the user's message from the textarea
+    let userName = document.getElementById("name").value;
+    let userEmail = document.getElementById("email").value;
+    let userMessage = document.getElementById("message").value;
+   
+    // Display the response in the response textarea
+    document.getElementById("response").value = "Name: " + userName + "\nEmail: " + userEmail + "\nMessage: " + userMessage;
+}
  
