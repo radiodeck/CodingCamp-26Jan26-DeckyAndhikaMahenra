@@ -1,21 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Decky</title>
 
     <!-- CSS External -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Tailwind CSS CDN-->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header></header>
+    <header class="main-header p-4">
+        <!-- Logo -->
+          <div class="logo"></div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#my-profile-page">My Profile</a>
+            <a class="border rounded p-2" href="#portofolio-page">Portofolio</a>
+            <a class="border rounded p-2" href="#Messages-Us-page">Message Us</a>
+        </nav>
+    </header>
     
-    <main></main>
+    <hr>    
+
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="p-8">
+            <h1 class="text-2xl font-bold mb-1" id="welcome-speech">Welcome to Decky Website</h1>
+            <p class="mb-40">This is the home page of Decky's portfolio website.</p>
+        </section>
+    <hr/>
+        <!-- My Profile Page -->
+        <section id="my-profile-page" class="p-8 pt-50">
+            <h2 class="text-2xl font-bold mb-1">My Profile</h2>
+            <p class="mb-40">This section contains information about Decky.</p>
+        </section>
+    <hr/>   
+        <!-- Portofolio Page -->
+        <section id="portofolio-page" class="p-8 pt-50">
+            <h2 class="text-2xl font-bold mb-1">My Portofolio</h2>
+            <p class="mb-40">This section contains my portfolio projects.</p>
+        </section>
+    <hr/>
+        <!-- Messages Us Page -->
+        <section id="messages-us-page" class="p-8 pt-5">
+            <header>
+                <h2 class="text-2xl font-bold mb-1">Messages Us</h2>
+                <p class="mb-4">Have a question? You can send me a message.</p>
+            </header>    
+
+            <form>
+                <div class="mb-1">
+                    <label for="name" class="block mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="border rounded p-2 mb-4 w-100" placeholder="Type your name" required>
+                </div>
+                
+                <div class="mb-1">  
+                    <label for="email" class="block mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="border rounded p-2 mb-4 w-100" placeholder="Type your email" required>
+                </div>
+
+                <div class="mb-1">
+                    <label for="message" class="block mb-2">Message:</label>
+                    <textarea id="message" name="message" class="border rounded p-2 mb-4 w-100" placeholder="Type your message" required></textarea>
+                </div>
+
+                <button type="submit" class="bg-gray-300 text-black p-2 rounded">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <hr/>
     
-    <footer></footer>
+    <footer>
+        <div class="text-center p-4 font-bold">© 2026 Decky Andhika Mahenra. All rights reserved.</div>
+    </footer>
 
     <!-- JavaScript External -->
-    <script src="script.js"></script>
+    <script src="js\script.js"></script>
 </body>
 </html>
