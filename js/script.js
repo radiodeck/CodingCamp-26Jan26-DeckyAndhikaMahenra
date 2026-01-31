@@ -15,16 +15,19 @@ function welcomeMessage() {
 }   
 
 // Function to handle form submission
-function submitForm(event) {}
+function submitForm(event) {
+    event.preventDefault(); // Mencegah reload halaman saat form disubmit
 
-// Function for responses
-function getResponse() {
-    // Get the user's message from the textarea
-    let userName = document.getElementById("name").value;
-    let userEmail = document.getElementById("email").value;
-    let userMessage = document.getElementById("message").value;
-   
-    // Display the response in the response textarea
-    document.getElementById("response").value = "Name: " + userName + "\nEmail: " + userEmail + "\nMessage: " + userMessage;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    
+    const responseArea = document.getElementById("response");
+
+    responseArea.value =
+        `Name   : ${name}\n` +
+        `Email  : ${email}\n\n` +
+        `Message:\n${message}`;
+    
+    event.target.reset(); // Reset form setelah submit
 }
- 
